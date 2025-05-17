@@ -4,7 +4,8 @@ const {
   saveDraft,
   publishBlog,
   getAllBlogs,
-  getBlogById
+  getBlogById,
+  deleteBlog
 } = require('../controllers/blogController');
 
 const auth = require('../middleware/auth'); // JWT authentication middleware
@@ -16,5 +17,8 @@ router.get('/:id', getBlogById);
 // 🔐 Protected Routes (require JWT token in header)
 router.post('/save-draft', auth, saveDraft);
 router.post('/publish', auth, publishBlog);
+
+// Delete a blog
+router.delete('/:id', auth, deleteBlog);
 
 module.exports = router;
