@@ -34,14 +34,13 @@ A full-stack blog application built with the **MERN** stack (MongoDB, Express.js
 
 - Node.js & npm installed
 - MongoDB Atlas account or local MongoDB installed
-- (Optional) Cloudinary account for image uploads
 
 ### Installation
 
 1. **Clone the repo**
     ```
-    git clone https://github.com/yourusername/mern-blog-app.git
-    cd mern-blog-app
+    git clone https://github.com/dasabhijit2004/blog-website.git
+    cd blog-website
     ```
 
 2. **Setup backend**
@@ -58,7 +57,7 @@ A full-stack blog application built with the **MERN** stack (MongoDB, Express.js
 
 4. **Environment Variables**
 
-    Create a `.env` file in the `backend` folder with:
+    Create a `.env` file in the `server` folder with:
 
     ```
     DB=your_mongodb_uri
